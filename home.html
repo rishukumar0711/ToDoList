@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To Do List</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="app">
+    <header>
+      <h1>Welcome!</h1>
+      <h2>Add Task</h2>
+      <form id="task-form">
+        <input type="text" id="new-task" placeholder="Your Task" required />
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" required />
+
+        <label for="time">Time:</label>
+        <input type="time" id="time" required />
+        <button type="submit">Add</button>
+      </form>
+    </header>
+
+    <section>
+      <h2>⏳ Pending</h2>
+      <ul id="pending-list"></ul>
+
+      <h2>📅 Upcoming</h2>
+      <ul id="upcoming-list"></ul>
+
+      <h2>✅ Completed</h2>
+      <ul id="completed-list"></ul>
+    </section>
+  </div>
+
+  <script src="script1.js"></script>
+</body>
+
+</html>
